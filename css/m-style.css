@@ -26,22 +26,22 @@ body {
 }
 .header .title {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 0.85rem;
+  left: 0.85rem;
   width: 2.2rem;
   height: auto;
 }
 .header .phone-call {
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 0.85rem;
+  right: 0.85rem;
   width: 6.2rem;
   height: auto;
 }
 .header .desc,
 .header .desc-2 {
   position: absolute;
-  top: 5.0rem;
+  top: 3.2rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -49,7 +49,8 @@ body {
   height: auto;
 }
 .header .desc-2 {
-  top: 11rem;
+  top: 9.5rem;
+  width: 8rem;
 }
 .desc-part-1 .desc-part-img,
 .desc-part-2 .desc-part-img,
@@ -57,18 +58,18 @@ body {
 .desc-part-4 .desc-part-img,
 .desc-part-5 .desc-part-img {
   display: block;
-  width: 15rem;
+  width: 100%;
   height: auto;
   margin: 0 auto;
+}
+.desc-part-5 {
+  margin-top: 2rem;
+  position: relative;
 }
 .desc-part-5 .desc-part-img {
   width: 11rem;
 }
 .desc-part-5 .text {
-  background: url('../image/font-bg.png');
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 12rem;
   margin: 0 auto;
   font-size: 12px;
@@ -77,32 +78,49 @@ body {
 .desc-part-5 .text p {
   text-indent: 1rem;
 }
+.desc-part-5 .txt-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0.1rem;
+  z-index: -1;
+}
 .contact-info {
-  margin: 0 34px;
+  margin: 1rem 1.7rem 0;
   display: inline-block;
 }
 .contact-info .contact-phone {
   margin-top: 1rem;
   display: inline-block;
+  height: 1.5rem;
+  width: 6.2rem;
 }
 .contact-info .contact-phone .icon {
   float: left;
   width: 1rem;
-  margin-right: 0.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 .contact-info .contact-phone .detail {
   display: inline-block;
   text-align: left;
   border-left: 1px solid #E1E1E1;
-  padding-left: 0.5rem;
+  margin-left: 0.8rem;
+  padding-left: 0.8rem;
 }
 .contact-info .contact-phone .detail .title,
 .contact-info .contact-phone .detail .info {
   display: block;
 }
+.contact-info .contact-phone:last-child {
+  width: 11rem;
+}
 .bottom {
   position: relative;
   margin-top: 1rem;
+  font-size: 0;
 }
 .bottom .map {
   width: 100%;
@@ -112,7 +130,7 @@ body {
   width: 80px;
   height: auto;
   position: absolute;
-  top: 47%;
+  top: 50.5%;
   left: 0;
   right: 0;
   margin: 0 auto;
