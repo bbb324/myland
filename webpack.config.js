@@ -1,3 +1,6 @@
+var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
+
 module.exports = {
   entry: "./js/main.js",
   output: {
@@ -17,6 +20,8 @@ module.exports = {
         options: {
           url: false
         }
+      }, {
+        loader: 'postcss-loader'
       }],
     }],
     loaders: [
@@ -37,9 +42,16 @@ module.exports = {
     }
     ]
   },
+
   resolve: {
     extensions: ['.js']
   },
-  plugins: []
+  plugins: [new webpack.LoaderOptionsPlugin({
+    options: {
+      postcss: [
+        autoprefixer(),
+      ]
+    }
+  })]
 };
 
