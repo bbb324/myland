@@ -10,7 +10,14 @@ module.exports = {
       loader: 'eslint-loader'
     }, {
       test: /\.css$/,
-      use: [ 'style-loader', 'css-loader', 'less-loader' ]
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader',
+        options: {
+          url: false
+        }
+      }],
     }],
     loaders: [
       //.js 文件使用 jsx-loader 来编译处理

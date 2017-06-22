@@ -1,7 +1,10 @@
-//require('../css/m-style.css');
 class instance {
   init() {
-    console.log(123);
+    if(navigator.userAgent.indexOf('iPhone')!= -1 || navigator.userAgent.indexOf('Android')!= -1) {
+      require('../css/m-style.css');
+    } else {
+      require('../css/style.css');
+    }
   }
 }
 
