@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-size: 0;
+  .header {
+    position: relative;
+    width: 100%;
+    height: 720px;
+    background-image: url('../image/pc-bg.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    .logo {
+      width: 86px;
+      height: auto;
+      position: absolute;
+      top: 25px;
+      left: 60px;
+    }
+    .contact-info {
+      width: 163px;
+      height: auto;
+      position: absolute;
+      top: 30px;
+      right: 60px;
+      float: right;
+    }
+    .slogan {
+      position: absolute;
+      top: 27.6%;
+      left: 19.9%;
+      width: 281px;
+      height: auto;
+    }
+    .pc-head-phone {
+      position: absolute;
+      top: 13.2%;
+      right: 17.1%;
+      float: right;
+      width: 290px;
+      height: auto;
+    }
+    .advantage {
+      position: absolute;
+      top: 66.4%;
+      left: 19.4%;
+      width: 247px;
+      height: auto;
+    }
+  }
+  .detail {
+    width: 100%;
+    height: 600px;
+    .detail-bg {
+      position: absolute;
+      width: 100%;
+      height: 600px;
+    }
+    .detail-1-img {
+      width: 338px;
+    }
+    .detail-2-img {
+      width: 408px;
+    }
+    .detail-3-img {
+      width: 380px;
+    }
+    .detail-4-img {
+      width: 426px;
+    }
+    .detail-1-txt {
+      width: 360px;
+    }
+    .detail-2-txt {
+      width: 360px;
+    }
+    .detail-3-txt {
+      width: 360px;
+    }
+    .detail-4-txt {
+      width: 360px;
+    }
+    .detail-1-img, .detail-1-txt,
+    .detail-2-img, .detail-2-txt,
+    .detail-3-img, .detail-3-txt,
+    .detail-4-img, .detail-4-txt
+    {
+      height: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+    .detail-1-img, .detail-3-img {
+      float: left;
+      left: 15%;
+    }
+    .detail-1-txt, .detail-3-txt {
+      float: right;
+      right: 13%;
+    }
+    .detail-2-img, .detail-4-img {
+      float: right;
+      right: 13%;
+    }
+    .detail-2-txt, .detail-4-txt {
+      float: left;
+      left: 15%;
+    }
+  }
+  .detail-description {
+    width: 100%;
+    height: 600px;
+    .detail-bg {
+      position: absolute;
+      width: 100%;
+      height: 600px;
+      z-index: -1;
+    }
+    .description-img {
+      width: 486px;
+      height: auto;
+      position: relative;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+    .description-txt {
+      float: right;
+      width: 360px;
+      font-size: 18px;
+      color: #666666;
+      position: relative;
+      top: 50%;
+      right: 13%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      p {
+        text-indent: 35px;
+      }
+    }
+  }
+  .contact-method {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    .phone, .email, .location {
+      display: inline-block;
+      height: 60px;
+      img {
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+      .info {
+        text-align: left;
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        border-left: 1px solid #E1E1E1;
+        margin-left: 25px;
+        padding-left: 25px;
+        .txt {
+          display: block;
+        }
+      }
+    }
+    .phone {
+      img {
+        width: 30px;
+        height: auto;
+      }
+      .txt {
+        width: 200px;
+      }
+    }
+    .email {
+      img {
+        width: 26px;
+        height: auto;
+      }
+      .txt {
+        width: 200px;
+      }
+    }
+    .location {
+      img {
+        width: 22px;
+        height: auto;
+      }
+      .txt {
+        width: 320px;
+      }
+    }
+  }
+  .footer {
+    position: relative;
+    .map {
+      width: 100%;
+      height: auto;
+    }
+    .pc-app {
+      width: 188px;
+      height: 188px;
+      position: absolute;
+      top: 38%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .pc-bottom {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

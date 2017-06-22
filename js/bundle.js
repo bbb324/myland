@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -195,7 +195,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(8);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -511,10 +511,62 @@ function updateLink (link, options, obj) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * 调整页面大小自适应屏幕。必须在body加载之前调整
+ */
+
+//调整页面大小自适应屏幕
+!function (x) {
+  function w() {
+    var a = r.getBoundingClientRect().width;
+    a / v > 840 && (a = 840 * v), x.rem = (a / 16 ) < 20 ? 20 : (a / 16), r.style.fontSize = x.rem + 'px';
+  }
+
+  var v, u, t, s = x.document, r = s.documentElement, q = s.querySelector('meta[name="viewport"]'), p = s.querySelector('meta[name="flexible"]');
+  if (q) {
+    //console.warn("将根据已有的meta标签来设置缩放比例");
+    var o = q.getAttribute('content').match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+    o && (u = parseFloat(o[2]), v = parseInt(1 / u));
+  } else {
+    if (p) {
+      var o = p.getAttribute('content').match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
+      o && (v = parseFloat(o[2]), u = parseFloat((1 / v).toFixed(2)));
+    }
+  }
+  if (!v && !u) {
+    var n = (x.navigator.appVersion.match(/android/gi), x.navigator.appVersion.match(/iphone/gi)), v = x.devicePixelRatio;
+    v = n ? v >= 3 ? 3 : v >= 2 ? 2 : 1 : 1, u = 1 / v;
+  }
+  if (r.setAttribute('data-dpr', v), !q) {
+    if (q = s.createElement('meta'), q.setAttribute('name', 'viewport'), q.setAttribute('content', 'initial-scale=' + u + ', maximum-scale=' + u + ', minimum-scale=' + u + ', user-scalable=no'), r.firstElementChild) {
+      r.firstElementChild.appendChild(q);
+    } else {
+      var m = s.createElement('div');
+      m.appendChild(q), s.write(m.innerHTML);
+    }
+  }
+  x.dpr = v, x.addEventListener('resize', function () {
+    clearTimeout(t), t = setTimeout(w, 300);
+  }, !1), x.addEventListener('pageshow', function (b) {
+    b.persisted && (clearTimeout(t), t = setTimeout(w, 300));
+  }, !1), 'complete' === s.readyState ? s.body.style.fontSize = 12 * v + 'px' : s.addEventListener('DOMContentLoaded', function () {
+    s.body.style.fontSize = 12 * v + 'px';
+  }, !1), w();
+}(window);
+//兼容cmd
+"function" !== 'undefined' && !(__WEBPACK_AMD_DEFINE_RESULT__ = function (require, exports, module) {
+}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(4);
+var content = __webpack_require__(5);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -539,13 +591,13 @@ if(false) {
 }
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(5);
+var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -570,7 +622,7 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -584,7 +636,7 @@ exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n.header {\n  wi
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -592,23 +644,23 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".container {\n    background: red;\n}", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n.container {\n  font-size: 0;\n}\n.container .header {\n  position: relative;\n  width: 100%;\n  height: 720px;\n  background-image: url('../image/pc-bg.png');\n  background-repeat: no-repeat;\n  background-size: 100%;\n}\n.container .header .logo {\n  width: 86px;\n  height: auto;\n  position: absolute;\n  top: 25px;\n  left: 60px;\n}\n.container .header .contact-info {\n  width: 163px;\n  height: auto;\n  position: absolute;\n  top: 30px;\n  right: 60px;\n  float: right;\n}\n.container .header .slogan {\n  position: absolute;\n  top: 27.6%;\n  left: 19.9%;\n  width: 281px;\n  height: auto;\n}\n.container .header .pc-head-phone {\n  position: absolute;\n  top: 13.2%;\n  right: 17.1%;\n  float: right;\n  width: 290px;\n  height: auto;\n}\n.container .header .advantage {\n  position: absolute;\n  top: 66.4%;\n  left: 19.4%;\n  width: 247px;\n  height: auto;\n}\n.container .detail {\n  width: 100%;\n  height: 600px;\n}\n.container .detail .detail-bg {\n  position: absolute;\n  width: 100%;\n  height: 600px;\n}\n.container .detail .detail-1-img {\n  width: 338px;\n}\n.container .detail .detail-2-img {\n  width: 408px;\n}\n.container .detail .detail-3-img {\n  width: 380px;\n}\n.container .detail .detail-4-img {\n  width: 426px;\n}\n.container .detail .detail-1-txt {\n  width: 360px;\n}\n.container .detail .detail-2-txt {\n  width: 360px;\n}\n.container .detail .detail-3-txt {\n  width: 360px;\n}\n.container .detail .detail-4-txt {\n  width: 360px;\n}\n.container .detail .detail-1-img,\n.container .detail .detail-1-txt,\n.container .detail .detail-2-img,\n.container .detail .detail-2-txt,\n.container .detail .detail-3-img,\n.container .detail .detail-3-txt,\n.container .detail .detail-4-img,\n.container .detail .detail-4-txt {\n  height: auto;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.container .detail .detail-1-img,\n.container .detail .detail-3-img {\n  float: left;\n  left: 15%;\n}\n.container .detail .detail-1-txt,\n.container .detail .detail-3-txt {\n  float: right;\n  right: 13%;\n}\n.container .detail .detail-2-img,\n.container .detail .detail-4-img {\n  float: right;\n  right: 13%;\n}\n.container .detail .detail-2-txt,\n.container .detail .detail-4-txt {\n  float: left;\n  left: 15%;\n}\n.container .detail-description {\n  width: 100%;\n  height: 600px;\n}\n.container .detail-description .detail-bg {\n  position: absolute;\n  width: 100%;\n  height: 600px;\n  z-index: -1;\n}\n.container .detail-description .description-img {\n  width: 486px;\n  height: auto;\n  position: relative;\n  top: 50%;\n  left: 10%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.container .detail-description .description-txt {\n  float: right;\n  width: 360px;\n  font-size: 18px;\n  color: #666666;\n  position: relative;\n  top: 50%;\n  right: 13%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.container .detail-description .description-txt p {\n  text-indent: 35px;\n}\n.container .contact-method {\n  width: 100%;\n  height: 120px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  font-size: 18px;\n}\n.container .contact-method .phone,\n.container .contact-method .email,\n.container .contact-method .location {\n  display: inline-block;\n  height: 60px;\n}\n.container .contact-method .phone img,\n.container .contact-method .email img,\n.container .contact-method .location img {\n  float: left;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.container .contact-method .phone .info,\n.container .contact-method .email .info,\n.container .contact-method .location .info {\n  text-align: left;\n  display: inline-block;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n  border-left: 1px solid #E1E1E1;\n  margin-left: 25px;\n  padding-left: 25px;\n}\n.container .contact-method .phone .info .txt,\n.container .contact-method .email .info .txt,\n.container .contact-method .location .info .txt {\n  display: block;\n}\n.container .contact-method .phone img {\n  width: 30px;\n  height: auto;\n}\n.container .contact-method .phone .txt {\n  width: 200px;\n}\n.container .contact-method .email img {\n  width: 26px;\n  height: auto;\n}\n.container .contact-method .email .txt {\n  width: 200px;\n}\n.container .contact-method .location img {\n  width: 22px;\n  height: auto;\n}\n.container .contact-method .location .txt {\n  width: 320px;\n}\n.container .footer {\n  position: relative;\n}\n.container .footer .map {\n  width: 100%;\n  height: auto;\n}\n.container .footer .pc-app {\n  width: 188px;\n  height: 188px;\n  position: absolute;\n  top: 38%;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n}\n.container .footer .pc-bottom {\n  width: 100%;\n  height: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 class instance {
   init() {
-    __webpack_require__(8);
+    __webpack_require__(2);
     if(navigator.userAgent.indexOf('iPhone')!= -1 || navigator.userAgent.indexOf('Android')!= -1 ||
       navigator.userAgent.indexOf('iPad')!= -1) {
-      __webpack_require__(2);
-    } else {
       __webpack_require__(3);
+    } else {
+      __webpack_require__(4);
     }
   }
 }
@@ -619,7 +671,7 @@ _instance.init();
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 
@@ -711,58 +763,6 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;/**
- * 调整页面大小自适应屏幕。必须在body加载之前调整
- */
-
-//调整页面大小自适应屏幕
-!function (x) {
-  function w() {
-    var a = r.getBoundingClientRect().width;
-    a / v > 840 && (a = 840 * v), x.rem = (a / 16 ) < 20 ? 20 : (a / 16), r.style.fontSize = x.rem + 'px';
-  }
-
-  var v, u, t, s = x.document, r = s.documentElement, q = s.querySelector('meta[name="viewport"]'), p = s.querySelector('meta[name="flexible"]');
-  if (q) {
-    //console.warn("将根据已有的meta标签来设置缩放比例");
-    var o = q.getAttribute('content').match(/initial\-scale=(["']?)([\d\.]+)\1?/);
-    o && (u = parseFloat(o[2]), v = parseInt(1 / u));
-  } else {
-    if (p) {
-      var o = p.getAttribute('content').match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
-      o && (v = parseFloat(o[2]), u = parseFloat((1 / v).toFixed(2)));
-    }
-  }
-  if (!v && !u) {
-    var n = (x.navigator.appVersion.match(/android/gi), x.navigator.appVersion.match(/iphone/gi)), v = x.devicePixelRatio;
-    v = n ? v >= 3 ? 3 : v >= 2 ? 2 : 1 : 1, u = 1 / v;
-  }
-  if (r.setAttribute('data-dpr', v), !q) {
-    if (q = s.createElement('meta'), q.setAttribute('name', 'viewport'), q.setAttribute('content', 'initial-scale=' + u + ', maximum-scale=' + u + ', minimum-scale=' + u + ', user-scalable=no'), r.firstElementChild) {
-      r.firstElementChild.appendChild(q);
-    } else {
-      var m = s.createElement('div');
-      m.appendChild(q), s.write(m.innerHTML);
-    }
-  }
-  x.dpr = v, x.addEventListener('resize', function () {
-    clearTimeout(t), t = setTimeout(w, 300);
-  }, !1), x.addEventListener('pageshow', function (b) {
-    b.persisted && (clearTimeout(t), t = setTimeout(w, 300));
-  }, !1), 'complete' === s.readyState ? s.body.style.fontSize = 12 * v + 'px' : s.addEventListener('DOMContentLoaded', function () {
-    s.body.style.fontSize = 12 * v + 'px';
-  }, !1), w();
-}(window);
-//兼容cmd
-"function" !== 'undefined' && !(__WEBPACK_AMD_DEFINE_RESULT__ = function (require, exports, module) {
-}.call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ })

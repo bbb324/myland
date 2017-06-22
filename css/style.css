@@ -1,3 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .container {
-    background: red;
+  font-size: 0;
+}
+.container .header {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  background-image: url('../image/pc-bg.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.container .header .logo {
+  width: 86px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+}
+.container .header .contact-info {
+  width: 163px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  float: right;
+}
+.container .header .slogan {
+  position: absolute;
+  top: 27.6%;
+  left: 19.9%;
+  width: 281px;
+  height: auto;
+}
+.container .header .pc-head-phone {
+  position: absolute;
+  top: 13.2%;
+  right: 17.1%;
+  float: right;
+  width: 290px;
+  height: auto;
+}
+.container .header .advantage {
+  position: absolute;
+  top: 66.4%;
+  left: 19.4%;
+  width: 247px;
+  height: auto;
+}
+.container .detail {
+  width: 100%;
+  height: 600px;
+}
+.container .detail .detail-bg {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+.container .detail .detail-1-img {
+  width: 338px;
+}
+.container .detail .detail-2-img {
+  width: 408px;
+}
+.container .detail .detail-3-img {
+  width: 380px;
+}
+.container .detail .detail-4-img {
+  width: 426px;
+}
+.container .detail .detail-1-txt {
+  width: 360px;
+}
+.container .detail .detail-2-txt {
+  width: 360px;
+}
+.container .detail .detail-3-txt {
+  width: 360px;
+}
+.container .detail .detail-4-txt {
+  width: 360px;
+}
+.container .detail .detail-1-img,
+.container .detail .detail-1-txt,
+.container .detail .detail-2-img,
+.container .detail .detail-2-txt,
+.container .detail .detail-3-img,
+.container .detail .detail-3-txt,
+.container .detail .detail-4-img,
+.container .detail .detail-4-txt {
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.container .detail .detail-1-img,
+.container .detail .detail-3-img {
+  float: left;
+  left: 15%;
+}
+.container .detail .detail-1-txt,
+.container .detail .detail-3-txt {
+  float: right;
+  right: 13%;
+}
+.container .detail .detail-2-img,
+.container .detail .detail-4-img {
+  float: right;
+  right: 13%;
+}
+.container .detail .detail-2-txt,
+.container .detail .detail-4-txt {
+  float: left;
+  left: 15%;
+}
+.container .detail-description {
+  width: 100%;
+  height: 600px;
+}
+.container .detail-description .detail-bg {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+}
+.container .detail-description .description-img {
+  width: 486px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.container .detail-description .description-txt {
+  float: right;
+  width: 360px;
+  font-size: 18px;
+  color: #666666;
+  position: relative;
+  top: 50%;
+  right: 13%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.container .detail-description .description-txt p {
+  text-indent: 35px;
+}
+.container .contact-method {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.container .contact-method .phone,
+.container .contact-method .email,
+.container .contact-method .location {
+  display: inline-block;
+  height: 60px;
+}
+.container .contact-method .phone img,
+.container .contact-method .email img,
+.container .contact-method .location img {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.container .contact-method .phone .info,
+.container .contact-method .email .info,
+.container .contact-method .location .info {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  border-left: 1px solid #E1E1E1;
+  margin-left: 25px;
+  padding-left: 25px;
+}
+.container .contact-method .phone .info .txt,
+.container .contact-method .email .info .txt,
+.container .contact-method .location .info .txt {
+  display: block;
+}
+.container .contact-method .phone img {
+  width: 30px;
+  height: auto;
+}
+.container .contact-method .phone .txt {
+  width: 200px;
+}
+.container .contact-method .email img {
+  width: 26px;
+  height: auto;
+}
+.container .contact-method .email .txt {
+  width: 200px;
+}
+.container .contact-method .location img {
+  width: 22px;
+  height: auto;
+}
+.container .contact-method .location .txt {
+  width: 320px;
+}
+.container .footer {
+  position: relative;
+}
+.container .footer .map {
+  width: 100%;
+  height: auto;
+}
+.container .footer .pc-app {
+  width: 188px;
+  height: 188px;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.container .footer .pc-bottom {
+  width: 100%;
+  height: auto;
 }
