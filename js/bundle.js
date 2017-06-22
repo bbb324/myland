@@ -578,7 +578,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n.header {\n  width: 100%;\n  height: 23rem;\n  background-image: url('../image/bg.png');\n  background-size: 100%;\n  background-repeat: no-repeat;\n}\n.header .cover-1 {\n  position: absolute;\n  top: 0;\n  background: rgba(24, 114, 217, 0.1);\n  width: 100%;\n  height: 23rem;\n}\n.header .cover-2 {\n  position: absolute;\n  top: 0;\n  background: rgba(0, 0, 0, 0.7);\n  width: 100%;\n  height: 23rem;\n}\n.header .title {\n  position: absolute;\n  top: 0.85rem;\n  left: 0.85rem;\n  width: 2.2rem;\n  height: auto;\n}\n.header .phone-call {\n  position: absolute;\n  top: 0.85rem;\n  right: 0.85rem;\n  width: 6.2rem;\n  height: auto;\n}\n.header .desc,\n.header .desc-2 {\n  position: absolute;\n  top: 3.2rem;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n  width: 9.75rem;\n  height: auto;\n}\n.header .desc-2 {\n  top: 9.5rem;\n  width: 8rem;\n}\n.desc-part-1 .desc-part-img,\n.desc-part-2 .desc-part-img,\n.desc-part-3 .desc-part-img,\n.desc-part-4 .desc-part-img,\n.desc-part-5 .desc-part-img {\n  display: block;\n  width: 100%;\n  height: auto;\n  margin: 0 auto;\n}\n.desc-part-5 {\n  margin-top: 2rem;\n  position: relative;\n}\n.desc-part-5 .desc-part-img {\n  width: 11rem;\n}\n.desc-part-5 .text {\n  width: 13.2rem;\n  margin: 0 auto;\n  font-size: 12px;\n  color: #666666;\n}\n.desc-part-5 .text p {\n  text-indent: 1rem;\n}\n.desc-part-5 .txt-bg {\n  width: 100%;\n  height: auto;\n  position: absolute;\n  top: 0.1rem;\n  z-index: -1;\n}\n.contact-info {\n  margin: 2rem 1.7rem 0;\n  display: inline-block;\n}\n.contact-info .contact-phone {\n  margin-top: 1rem;\n  display: inline-block;\n  height: 1.5rem;\n  width: 6.2rem;\n}\n.contact-info .contact-phone .icon {\n  float: left;\n  width: 1rem;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.contact-info .contact-phone .detail {\n  display: inline-block;\n  text-align: left;\n  border-left: 1px solid #E1E1E1;\n  margin-left: 0.8rem;\n  padding-left: 0.8rem;\n}\n.contact-info .contact-phone .detail .title,\n.contact-info .contact-phone .detail .info {\n  display: block;\n}\n.contact-info .contact-phone:last-child {\n  width: 11rem;\n}\n.contact-info .contact-phone:last-child .icon {\n  width: 0.8rem;\n}\n.bottom {\n  position: relative;\n  margin-top: 1rem;\n  font-size: 0;\n}\n.bottom .map {\n  width: 100%;\n  height: auto;\n}\n.bottom .app {\n  width: 3.4135rem;\n  height: auto;\n  position: absolute;\n  top: 50.5%;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n}\n.bottom .bottom-img {\n  background: url('../image/bottom.png') no-repeat;\n  background-size: 100%;\n  width: 100%;\n  height: auto;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n.header {\n  width: 100%;\n  height: 23rem;\n  background-image: url('../image/bg.png');\n  background-size: 100%;\n  background-repeat: no-repeat;\n}\n.header .cover-1 {\n  position: absolute;\n  top: 0;\n  background: rgba(24, 114, 217, 0.1);\n  width: 100%;\n  height: 23rem;\n}\n.header .cover-2 {\n  position: absolute;\n  top: 0;\n  background: rgba(0, 0, 0, 0.7);\n  width: 100%;\n  height: 23rem;\n}\n.header .title {\n  position: absolute;\n  top: 0.85rem;\n  left: 0.85rem;\n  width: 2.2rem;\n  height: auto;\n}\n.header .phone-call {\n  position: absolute;\n  top: 0.85rem;\n  right: 0.85rem;\n  width: 6.2rem;\n  height: auto;\n}\n.header .desc,\n.header .desc-2 {\n  position: absolute;\n  top: 3.2rem;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n  width: 9.75rem;\n  height: auto;\n}\n.header .desc-2 {\n  top: 9.5rem;\n  width: 8rem;\n}\n.desc-part-1 .desc-part-img,\n.desc-part-2 .desc-part-img,\n.desc-part-3 .desc-part-img,\n.desc-part-4 .desc-part-img,\n.desc-part-5 .desc-part-img {\n  display: block;\n  width: 100%;\n  height: auto;\n  margin: 0 auto;\n}\n.desc-part-5 {\n  margin-top: 2rem;\n  position: relative;\n}\n.desc-part-5 .desc-part-img {\n  width: 11rem;\n}\n.desc-part-5 .text {\n  width: 13.2rem;\n  margin: 0 auto;\n  font-size: 12px;\n  color: #666666;\n}\n.desc-part-5 .text p {\n  text-indent: 1rem;\n}\n.desc-part-5 .txt-bg {\n  width: 100%;\n  height: 110%;\n  position: absolute;\n  top: 0.1rem;\n  z-index: -1;\n}\n.contact-info {\n  margin: 2rem 1.4rem 0;\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  font-size: 0.6rem;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n.contact-info .contact-phone {\n  margin-top: 1rem;\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  height: 1.7rem;\n  width: 6.4rem;\n}\n.contact-info .contact-phone .icon {\n  float: left;\n  width: 1rem;\n  position: relative;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n}\n.contact-info .contact-phone .detail {\n  display: inline-block;\n  text-align: left;\n  border-left: 1px solid #E1E1E1;\n  margin-left: 0.4rem;\n  padding-left: 0.4rem;\n}\n.contact-info .contact-phone .detail .title,\n.contact-info .contact-phone .detail .info {\n  display: block;\n}\n.contact-info .contact-phone .phone {\n  height: 1rem;\n}\n.contact-info .contact-phone .email {\n  height: 0.8rem;\n}\n.contact-info .contact-phone:last-child {\n  width: 11rem;\n}\n.contact-info .contact-phone:last-child .icon {\n  width: 0.8rem;\n  height: 1rem;\n  margin-right: 0.2rem;\n}\n.bottom {\n  position: relative;\n  margin-top: 1rem;\n  font-size: 0;\n}\n.bottom .map {\n  width: 100%;\n  height: auto;\n}\n.bottom .app {\n  width: 3.4135rem;\n  height: auto;\n  position: absolute;\n  top: 50.5%;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n}\n.bottom .bottom-img {\n  background: url('../image/bottom.png') no-repeat;\n  background-size: 100%;\n  width: 100%;\n  height: auto;\n}\n", ""]);
 
 // exports
 
@@ -603,7 +603,9 @@ exports.push([module.i, ".container {\n    background: red;\n}", ""]);
 
 class instance {
   init() {
-    if(navigator.userAgent.indexOf('iPhone')!= -1 || navigator.userAgent.indexOf('Android')!= -1) {
+    __webpack_require__(8);
+    if(navigator.userAgent.indexOf('iPhone')!= -1 || navigator.userAgent.indexOf('Android')!= -1 ||
+      navigator.userAgent.indexOf('iPad')!= -1) {
       __webpack_require__(2);
     } else {
       __webpack_require__(3);
@@ -709,6 +711,58 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * 调整页面大小自适应屏幕。必须在body加载之前调整
+ */
+
+//调整页面大小自适应屏幕
+!function (x) {
+  function w() {
+    var a = r.getBoundingClientRect().width;
+    a / v > 840 && (a = 840 * v), x.rem = (a / 16 ) < 20 ? 20 : (a / 16), r.style.fontSize = x.rem + 'px';
+  }
+
+  var v, u, t, s = x.document, r = s.documentElement, q = s.querySelector('meta[name="viewport"]'), p = s.querySelector('meta[name="flexible"]');
+  if (q) {
+    //console.warn("将根据已有的meta标签来设置缩放比例");
+    var o = q.getAttribute('content').match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+    o && (u = parseFloat(o[2]), v = parseInt(1 / u));
+  } else {
+    if (p) {
+      var o = p.getAttribute('content').match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
+      o && (v = parseFloat(o[2]), u = parseFloat((1 / v).toFixed(2)));
+    }
+  }
+  if (!v && !u) {
+    var n = (x.navigator.appVersion.match(/android/gi), x.navigator.appVersion.match(/iphone/gi)), v = x.devicePixelRatio;
+    v = n ? v >= 3 ? 3 : v >= 2 ? 2 : 1 : 1, u = 1 / v;
+  }
+  if (r.setAttribute('data-dpr', v), !q) {
+    if (q = s.createElement('meta'), q.setAttribute('name', 'viewport'), q.setAttribute('content', 'initial-scale=' + u + ', maximum-scale=' + u + ', minimum-scale=' + u + ', user-scalable=no'), r.firstElementChild) {
+      r.firstElementChild.appendChild(q);
+    } else {
+      var m = s.createElement('div');
+      m.appendChild(q), s.write(m.innerHTML);
+    }
+  }
+  x.dpr = v, x.addEventListener('resize', function () {
+    clearTimeout(t), t = setTimeout(w, 300);
+  }, !1), x.addEventListener('pageshow', function (b) {
+    b.persisted && (clearTimeout(t), t = setTimeout(w, 300));
+  }, !1), 'complete' === s.readyState ? s.body.style.fontSize = 12 * v + 'px' : s.addEventListener('DOMContentLoaded', function () {
+    s.body.style.fontSize = 12 * v + 'px';
+  }, !1), w();
+}(window);
+//兼容cmd
+"function" !== 'undefined' && !(__WEBPACK_AMD_DEFINE_RESULT__ = function (require, exports, module) {
+}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ })

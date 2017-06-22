@@ -80,20 +80,23 @@ body {
 }
 .desc-part-5 .txt-bg {
   width: 100%;
-  height: auto;
+  height: 110%;
   position: absolute;
   top: 0.1rem;
   z-index: -1;
 }
 .contact-info {
-  margin: 2rem 1.7rem 0;
-  display: inline-block;
+  margin: 2rem 1.4rem 0;
+  display: inline-flex;
+  font-size: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .contact-info .contact-phone {
   margin-top: 1rem;
-  display: inline-block;
-  height: 1.5rem;
-  width: 6.2rem;
+  display: inline-flex;
+  height: 1.7rem;
+  width: 6.4rem;
 }
 .contact-info .contact-phone .icon {
   float: left;
@@ -107,18 +110,26 @@ body {
   display: inline-block;
   text-align: left;
   border-left: 1px solid #E1E1E1;
-  margin-left: 0.8rem;
-  padding-left: 0.8rem;
+  margin-left: 0.4rem;
+  padding-left: 0.4rem;
 }
 .contact-info .contact-phone .detail .title,
 .contact-info .contact-phone .detail .info {
   display: block;
+}
+.contact-info .contact-phone .phone {
+  height: 1rem;
+}
+.contact-info .contact-phone .email {
+  height: 0.8rem;
 }
 .contact-info .contact-phone:last-child {
   width: 11rem;
 }
 .contact-info .contact-phone:last-child .icon {
   width: 0.8rem;
+  height: 1rem;
+  margin-right: 0.2rem;
 }
 .bottom {
   position: relative;
