@@ -31,7 +31,7 @@ body {
       position: absolute;
       top: 27.6%;
       left: 19.9%;
-      width: 281px;
+      width: 23%;
       height: auto;
     }
     .pc-head-phone {
@@ -39,14 +39,14 @@ body {
       top: 13.2%;
       right: 17.1%;
       float: right;
-      width: 290px;
+      width: 23%;
       height: auto;
     }
     .advantage {
       position: absolute;
       top: 66.4%;
       left: 19.4%;
-      width: 247px;
+      width: 23%;
       height: auto;
     }
   }
@@ -148,7 +148,7 @@ body {
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 18px;
     .phone, .email, .location {
       display: inline-block;
@@ -180,26 +180,17 @@ body {
         width: 30px;
         height: auto;
       }
-      .txt {
-        width: 200px;
-      }
     }
     .email {
       img {
         width: 26px;
         height: auto;
       }
-      .txt {
-        width: 200px;
-      }
     }
     .location {
       img {
         width: 22px;
         height: auto;
-      }
-      .txt {
-        width: 320px;
       }
     }
   }
@@ -222,5 +213,48 @@ body {
       width: 100%;
       height: auto;
     }
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+  .container .header {
+    height: 27rem;
+  }
+  .container .header .slogan {
+    top: 17.6%;
+  }
+  .container .header .pc-head-phone {
+    top: 20.2%;
+  }
+  .container .header .advantage {
+    top: 65.3%
+  }
+  .container .detail, .container .detail .detail-bg {
+    height: 18.8rem;
+  }
+  .container .detail .detail-1-img, .container .detail .detail-1-txt,
+  .container .detail .detail-2-img, .container .detail .detail-2-txt,
+  .container .detail .detail-3-img, .container .detail .detail-3-txt,
+  .container .detail .detail-4-img, .container .detail .detail-4-txt, {
+    width: 14rem;
+  }
+  .container .detail-description .description-img {
+    width: 28%;
+  }
+  .container .detail-description {
+    height: 18.8rem;
+  }
+  .container .detail-description .description-txt {
+    font-size: 0.8rem;
+  }
+  .container .contact-method {
+    font-size: 0.8rem;
+    .phone {
+      width: 11rem;
+    }
+  }
+  .container .footer .pc-app {
+    width: 6.25rem;
+    height: auto;
   }
 }

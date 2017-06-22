@@ -5,10 +5,11 @@ body {
 .header {
   width: 100%;
   height: 23rem;
-  background-image: url('../image/bg.png');
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+}
+.header .bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 .header .cover-1 {
   position: absolute;
@@ -20,7 +21,7 @@ body {
 .header .cover-2 {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: #000000;
   width: 100%;
   height: 23rem;
 }
@@ -41,7 +42,7 @@ body {
 .header .desc,
 .header .desc-2 {
   position: absolute;
-  top: 3.2rem;
+  top: 2.9rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -49,8 +50,18 @@ body {
   height: auto;
 }
 .header .desc-2 {
-  top: 9.5rem;
+  top: 9rem;
   width: 8rem;
+}
+.header .mobile-phone {
+  width: 9.3rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  bottom: 5.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .desc-part-1 .desc-part-img,
 .desc-part-2 .desc-part-img,
@@ -86,7 +97,7 @@ body {
   z-index: -1;
 }
 .contact-info {
-  margin: 2rem 1.4rem 0;
+  margin: 2rem 1rem 0;
   display: inline-flex;
   font-size: 0.6rem;
   flex-wrap: wrap;
@@ -110,12 +121,18 @@ body {
   display: inline-block;
   text-align: left;
   border-left: 1px solid #E1E1E1;
-  margin-left: 0.4rem;
-  padding-left: 0.4rem;
+  margin-left: 0.5rem;
+  padding-left: 0.7rem;
+  line-height: 1.1rem;
+  height: 2rem;
 }
 .contact-info .contact-phone .detail .title,
 .contact-info .contact-phone .detail .info {
   display: block;
+  color: #333333;
+}
+.contact-info .contact-phone .detail .info {
+  color: #999999;
 }
 .contact-info .contact-phone .phone {
   height: 1rem;
@@ -124,7 +141,7 @@ body {
   height: 0.8rem;
 }
 .contact-info .contact-phone:last-child {
-  width: 11rem;
+  width: 12rem;
 }
 .contact-info .contact-phone:last-child .icon {
   width: 0.8rem;
