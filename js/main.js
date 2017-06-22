@@ -1,3 +1,4 @@
+require('../css/m-style.css');
 class instance {
   init() {
     console.log(123);

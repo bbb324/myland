@@ -6,9 +6,7 @@ body {
 .header {
   width: 100%;
   height: 23rem;
-  background-image: url('../image/bg.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  backgorund: require('../image/bg.png') 100% no-repeat;
 }
 .header .cover-1 {
   position: absolute;
