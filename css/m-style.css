@@ -31,3 +31,40 @@ body {
   width: 2.2rem;
   height: auto;
 }
+.header .phone-call {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  width: 6.2rem;
+  height: auto;
+}
+.header .desc {
+  position: absolute;
+  top: 4.0rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 9.75rem;
+  height: auto;
+}
+.desc-part-1 .desc-part-img,
+.desc-part-2 .desc-part-img,
+.desc-part-3 .desc-part-img,
+.desc-part-4 .desc-part-img,
+.desc-part-5 .desc-part-img {
+  display: block;
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+}
+.desc-part-5 .desc-part-img {
+  width: 11rem;
+}
+.desc-part-5 .text {
+  width: 12rem;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.desc-part-5 .text p {
+  text-indent: 1rem;
+}
