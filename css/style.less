@@ -4,7 +4,7 @@ body {
 }
 .container {
   font-size: 0;
-  .header {
+  /*.header {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -54,6 +54,12 @@ body {
         width: 32.14%;
         height: auto;
       }
+    }
+  }*/
+  .header {
+    .all-in-one {
+      width: 100%;
+      height: auto;
     }
   }
   .detail {
@@ -110,15 +116,15 @@ body {
 
     .detail-1-img, .detail-3-img {
       float: left;
-      left: 0;
+      margin-left: 5%;
     }
     .detail-1-txt, .detail-3-txt {
       float: right;
-      right: 13%;
+      right: 5%;
     }
     .detail-2-img, .detail-4-img {
       float: right;
-      right: 0%;
+      right: 5%;
     }
     .detail-2-txt, .detail-4-txt {
       float: left;
@@ -134,27 +140,30 @@ body {
       height: 600px;
       z-index: -1;
     }
-    .description-img {
-      width: 486px;
-      height: auto;
-      position: relative;
-      top: 50%;
-      left: 10%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-    }
-    .description-txt {
-      float: right;
-      width: 360px;
-      font-size: 18px;
-      color: #666666;
-      position: relative;
-      top: 50%;
-      right: 13%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      p {
-        text-indent: 35px;
+    .detail-content {
+      height: inherit;
+      .description-img {
+        width: 486px;
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+      .description-txt {
+        float: right;
+        width: 360px;
+        font-size: 18px;
+        color: #666666;
+        position: relative;
+        top: 50%;
+        right: 13%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        p {
+          text-indent: 35px;
+        }
       }
     }
   }
@@ -227,6 +236,18 @@ body {
     .pc-bottom {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .detail {
+    width: 100%;
+    .detail-content {
+      width: 1170px;
+      .detail-bg {
+        width: 1170px;
+      }
     }
   }
 }
