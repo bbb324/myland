@@ -7,8 +7,8 @@ body {
 }
 .container .header {
   position: relative;
-  width: 100%;
-  height: 720px;
+  width: 100vw;
+  height: 100vh;
   background-image: url('../image/pc-bg.png');
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
@@ -29,60 +29,48 @@ body {
   right: 60px;
   float: right;
 }
-.container .header .slogan {
+.container .header .header-content {
+  position: relative;
+  width: 1170px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.container .header .header-content .slogan {
   position: absolute;
-  top: 27.6%;
-  left: 19.9%;
+  top: 30.6%;
+  left: 0;
   width: 23%;
   height: auto;
 }
-.container .header .pc-head-phone {
+.container .header .header-content .pc-head-phone {
   position: absolute;
   top: 13.2%;
   right: 17.1%;
   float: right;
-  width: 23%;
+  width: 30.512%;
   height: auto;
 }
-.container .header .advantage {
+.container .header .header-content .advantage {
   position: absolute;
-  top: 66.4%;
-  left: 19.4%;
-  width: 23%;
+  top: 55.4%;
+  left: 0%;
+  width: 32.14%;
   height: auto;
 }
 .container .detail {
-  width: 100%;
+  width: 1920px;
   height: 600px;
+  margin: 0 auto;
 }
 .container .detail .detail-bg {
   position: absolute;
   width: 100%;
   height: 600px;
 }
-.container .detail .detail-1-img {
-  width: 338px;
-}
-.container .detail .detail-2-img {
-  width: 408px;
-}
-.container .detail .detail-3-img {
-  width: 380px;
-}
-.container .detail .detail-4-img {
-  width: 426px;
-}
-.container .detail .detail-1-txt {
-  width: 360px;
-}
-.container .detail .detail-2-txt {
-  width: 360px;
-}
-.container .detail .detail-3-txt {
-  width: 360px;
-}
-.container .detail .detail-4-txt {
-  width: 360px;
+.container .detail .detail-content {
+  width: 1170px;
+  height: inherit;
+  margin: 0 auto;
 }
 .container .detail .detail-1-img,
 .container .detail .detail-1-txt,
@@ -98,10 +86,36 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
+.container .detail .detail-1-img {
+  height: 56.1%;
+  width: auto;
+}
+.container .detail .detail-2-img {
+  width: 408px;
+}
+.container .detail .detail-3-img {
+  width: 380px;
+}
+.container .detail .detail-4-img {
+  width: 426px;
+}
+.container .detail .detail-1-txt {
+  height: 28.8%;
+  width: auto;
+}
+.container .detail .detail-2-txt {
+  width: 360px;
+}
+.container .detail .detail-3-txt {
+  width: 360px;
+}
+.container .detail .detail-4-txt {
+  width: 360px;
+}
 .container .detail .detail-1-img,
 .container .detail .detail-3-img {
   float: left;
-  left: 15%;
+  left: 0;
 }
 .container .detail .detail-1-txt,
 .container .detail .detail-3-txt {
@@ -111,7 +125,7 @@ body {
 .container .detail .detail-2-img,
 .container .detail .detail-4-img {
   float: right;
-  right: 13%;
+  right: 0%;
 }
 .container .detail .detail-2-txt,
 .container .detail .detail-4-txt {
@@ -224,17 +238,18 @@ body {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .container .header {
-    height: 27rem;
+    height: 576px;
   }
-  .container .header .slogan {
-    top: 17.6%;
+  .container .header .header-content {
+    height: 576px;
+    width: 750px;
   }
-  .container .header .pc-head-phone {
+  .container .header .header-content .pc-head-phone {
     top: 20.2%;
   }
-  .container .header .advantage {
+  .container .header .header-content .advantage {
     top: 65.3%;
   }
   .container .detail,
