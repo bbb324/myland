@@ -4,7 +4,7 @@ body {
 }
 .container {
   font-size: 0;
-  font-family: "Microsoft YaHei", din;
+  font-family: din, "Microsoft YaHei";
 }
 .container .header {
   width: 100%;
