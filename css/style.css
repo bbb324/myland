@@ -12,6 +12,100 @@ body {
   -webkit-background-size: 100%;
   background-size: 100%;
 }
+.container .header .nav {
+  width: 100%;
+  height: 90px;
+}
+.container .header .nav .name {
+  display: inline-block;
+  height: 40px;
+  width: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.container .header .nav .phone {
+  float: right;
+  font-size: 18px;
+  color: #FFFFFF;
+  height: 90px;
+  line-height: 90px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.container .header .nav .phone img {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.container .header .header-content {
+  width: 1170px;
+  height: 950px;
+  margin: 100px auto 0;
+}
+.container .header .header-content .slogan {
+  width: 100%;
+  color: white;
+  position: relative;
+  margin-top: 0.8rem;
+}
+.container .header .header-content .slogan .title-1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 36px;
+}
+.container .header .header-content .slogan .title-2 {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 0.86;
+  letter-spacing: 5px;
+}
+.container .header .header-content .slogan-2 {
+  width: 9.21rem;
+  margin: 0.685rem auto 0;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.container .header .header-content .slogan-2 .slogan-2-1,
+.container .header .header-content .slogan-2 .slogan-2-2 {
+  width: 3.6rem;
+  display: inline-flex;
+  text-align: left;
+}
+.container .header .header-content .slogan-2 .slogan-2-1 {
+  margin-right: 0.5rem;
+}
+.container .header .header-content .slogan-2 .slogan-2-1 .direct {
+  position: relative;
+  top: 2px;
+  margin-right: 6px;
+  float: left;
+  background: url('../image/compare.png');
+  -webkit-background-size: 13px;
+  background-size: 13px;
+  width: 13px;
+  height: 13px;
+}
+.container .header .header-content .slogan-2 .slogan-2-2 .pointer {
+  position: relative;
+  top: 2px;
+  margin-right: 6px;
+  float: left;
+  background: url('../image/pointer.png');
+  -webkit-background-size: 13px;
+  background-size: 13px;
+  width: 13px;
+  height: 13px;
+}
 .container .detail {
   width: 1920px;
   height: 600px;
