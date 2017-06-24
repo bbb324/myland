@@ -51,6 +51,70 @@ body {
   height: 830px;
   margin: 129px auto 0;
   position: relative;
+  /*.draw-iphone {
+        width: 357px;
+        height: 692px;
+        border: 1px solid #979797;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        float: right;
+        position: relative;
+        .draw-iphone-line {
+          width: 80px;
+          height: 1px;
+          background: #979797;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          top: 29px;
+        }
+        .draw-iphone-inner {
+          width: 312px;
+          height: 570px;
+          border: 1px solid #979797;
+          margin: auto;
+          position: absolute;
+          bottom: 25px;
+          left: 0;
+          right: 0;
+          top: 0;
+          .txt {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+            height: 200px;
+            .app {
+              display: block;
+              width: 151px;
+              height: auto;
+              margin: 0 auto 15px;
+            }
+            .title-1, .title-2 {
+              color: white;
+              font-size: 18px;
+              display: block;
+              text-align: center;
+            }
+          }
+
+        }
+        .circle {
+          width: 40px;
+          height: 40px;
+          -webkit-border-radius: 100%;
+          border-radius: 100%;
+          border: 1px solid #979797;
+          position: absolute;
+          bottom: 12px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+
+      }*/
 }
 .container .header .header-content .slogans {
   padding-top: 46px;
@@ -129,68 +193,31 @@ body {
   -webkit-background-size: 100%;
   background-size: 100%;
 }
-.container .header .header-content .draw-iphone {
+.container .header .header-content .iphone {
   width: 357px;
   height: 692px;
-  border: 1px solid #979797;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
+  background: url('../image/iPhone.png');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   float: right;
   position: relative;
 }
-.container .header .header-content .draw-iphone .draw-iphone-line {
-  width: 80px;
-  height: 1px;
-  background: #979797;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 29px;
-}
-.container .header .header-content .draw-iphone .draw-iphone-inner {
-  width: 312px;
-  height: 570px;
-  border: 1px solid #979797;
-  margin: auto;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-.container .header .header-content .draw-iphone .draw-iphone-inner .txt {
+.container .header .header-content .iphone .txt {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 254px;
   right: 0;
   margin: auto;
   bottom: 0;
   height: 200px;
 }
-.container .header .header-content .draw-iphone .draw-iphone-inner .txt .app {
-  display: block;
-  width: 151px;
-  height: auto;
-  margin: 0 auto 15px;
-}
-.container .header .header-content .draw-iphone .draw-iphone-inner .txt .title-1,
-.container .header .header-content .draw-iphone .draw-iphone-inner .txt .title-2 {
+.container .header .header-content .iphone .txt .title-1,
+.container .header .header-content .iphone .txt .title-2 {
   color: white;
   font-size: 18px;
   display: block;
   text-align: center;
-}
-.container .header .header-content .draw-iphone .circle {
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  border: 1px solid #979797;
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 .container .header .header-content .arrow {
   position: absolute;
@@ -417,6 +444,24 @@ body {
 .container .footer .copyright .txt .title-1 {
   display: block;
 }
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+  .container .header {
+    height: 900px;
+  }
+  .container .header .header-content {
+    height: 680px;
+    margin-top: 34px;
+  }
+  .container .header .header-content .line {
+    margin-top: 54px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 96px;
+  }
+  .container .footer .map {
+    height: 333px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .container .header {
     height: 711px;
@@ -424,13 +469,29 @@ body {
   .container .header .header-content {
     width: 750px;
     height: 563px;
-    margin: 58px auto 0;
-  }
-  .container .middle .part .detail {
-    width: 750px;
+    margin: 0 auto;
   }
   .container .middle .part .detail .detail-odd-img {
     width: 250px;
     height: auto;
+  }
+  .container .header .header-content .slogans .slogan {
+    width: 306px;
+  }
+  .container .header .header-content .slogans .slogan .title-1 {
+    font-size: 50px;
+  }
+  .container .header .header-content .slogans .slogan .title-2 {
+    letter-spacing: 8px;
+  }
+  .container .header .header-content .line {
+    margin-top: 70px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 70px;
+  }
+  .container .header .header-content .iphone {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }

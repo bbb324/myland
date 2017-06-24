@@ -128,7 +128,7 @@ body {
         -webkit-background-size: 100%;
         background-size: 100%;
       }
-      .draw-iphone {
+      /*.draw-iphone {
         width: 357px;
         height: 692px;
         border: 1px solid #979797;
@@ -191,6 +191,31 @@ body {
           margin: 0 auto;
         }
 
+      }*/
+      .iphone {
+        width: 357px;
+        height: 692px;
+        background: url('../image/iPhone.png');
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        float: right;
+        position: relative;
+        .txt {
+          position: absolute;
+          left: 0;
+          top: 254px;
+          right: 0;
+          margin: auto;
+          bottom: 0;
+          height: 200px;
+          .title-1, .title-2 {
+            color: white;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+          }
+        }
       }
 
       .arrow {
@@ -422,6 +447,28 @@ body {
     }
   }
 }
+@media screen and (min-width:1300px) and (max-width:1800px) {
+  .container .header  {
+    height: 900px;
+    .header-content {
+      height: 680px;
+      margin-top: 34px;
+    }
+  }
+  .container .header .header-content .line {
+    margin-top: 54px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 96px;
+  }
+  .container{
+    .footer {
+      .map {
+        height: 333px;
+      }
+    }
+  }
+}
 
 @media screen and (min-width:768px) and (max-width:1280px) {
   .container .header {
@@ -429,19 +476,38 @@ body {
     .header-content {
       width: 750px;
       height: 563px;
-      margin: 58px auto 0;
+      margin: 0 auto;
     }
   }
   .container .middle {
     .part {
       .detail {
-        width: 750px;
         .detail-odd-img {
           width: 250px;
           height: auto;
         }
       }
     }
-
+  }
+  .container .header .header-content .slogans {
+    .slogan {
+      width: 306px;
+      .title-1 {
+        font-size: 50px;
+      }
+      .title-2 {
+        letter-spacing: 8px;
+      }
+    }
+  }
+  .container .header .header-content .line{
+    margin-top: 70px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 70px;
+  }
+  .container .header .header-content .iphone {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
