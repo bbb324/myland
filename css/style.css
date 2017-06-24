@@ -4,62 +4,13 @@ body {
 }
 .container {
   font-size: 0;
-  /*.header {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../image/pc-bg.png');
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    .logo {
-      width: 86px;
-      height: auto;
-      position: absolute;
-      top: 25px;
-      left: 60px;
-    }
-    .contact-info {
-      width: 163px;
-      height: auto;
-      position: absolute;
-      top: 30px;
-      right: 60px;
-      float: right;
-    }
-    .header-content {
-      position: relative;
-      width: 1170px;
-      height: 100vh;
-      margin: 0 auto;
-      .slogan {
-        position: absolute;
-        top: 30.6%;
-        left: 0;
-        width: 23%;
-        height: auto;
-      }
-      .pc-head-phone {
-        position: absolute;
-        top: 13.2%;
-        right: 17.1%;
-        float: right;
-        width: 30.512%;
-        height: auto;
-      }
-      .advantage {
-        position: absolute;
-        top: 55.4%;
-        left: 0%;
-        width: 32.14%;
-        height: auto;
-      }
-    }
-  }*/
 }
-.container .header .all-in-one {
+.container .header {
   width: 100%;
-  height: auto;
+  height: 1080px;
+  background: url('../image/pc-bg.png') no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 }
 .container .detail {
   width: 1920px;
