@@ -5,6 +5,7 @@ body {
 .header {
   width: 100%;
   height: 24rem;
+  position: relative;
   .bg {
     width: 100%;
     height: 24rem;
@@ -25,31 +26,85 @@ body {
     height: 24rem;
   }
   .title {
-    position: absolute;
-    top: 0.85rem;
-    left: 0.85rem;
+    position: relative;
+    margin-top: 0.85rem;
+    margin-left: 0.85rem;
     width: 2.2rem;
     height: auto;
   }
-  .phone-call {
-    position: absolute;
-    top: 0.85rem;
-    right: 0.85rem;
-    width: 6.2rem;
-    height: auto;
+  .slogan {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 0.8rem;
+    .title-1 {
+      display: block;
+      width: 9.22rem;
+      margin: 0 auto;
+      font-size: 36px;
+    }
+    .title-2 {
+      display: block;
+      width: 9.22rem;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 0.86;
+      letter-spacing: 5px;
+    }
   }
-  .desc, .desc-2 {
-    position: absolute;
-    top: 3.2rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 9.75rem;
-    height: auto;
+  .slogan-2 {
+    width: 9.21rem;
+    margin: 0.685rem auto 0;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    text-align: center;
+    .slogan-2-1, .slogan-2-2 {
+      width: 2.86rem;
+      display: inline-flex;
+
+      text-align: left;
+    }
+    .slogan-2-1 {
+      margin-right: 0.5rem;
+      .direct {
+        position: relative;
+        top: 2px;
+        margin-right: 6px;
+        float: left;
+        background: url('../image/compare.png');
+        -webkit-background-size: 13px;
+        background-size: 13px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+    .slogan-2-2 {
+      .pointer {
+        position: relative;
+        top: 2px;
+        margin-right: 6px;
+        float: left;
+        background: url('../image/pointer.png');
+        -webkit-background-size: 13px;
+        background-size: 13px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+    .title-sub {
+      display: flex;
+      justify-content: center;
+
+    }
   }
   .desc-2 {
-    top: 9rem;
-    width: 8rem;
+    position: relative;
+    display: block;
+    margin: 0.85rem auto 0;
+    width: 9.75rem;
+    height: auto;
   }
   .mobile-phone {
     width: 9.3rem;
@@ -60,6 +115,74 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+  }
+}
+.body-content {
+  .desc-part {
+    margin-top: 2.15rem;
+    width: 100%;
+    height: 14.95rem;
+    background: url('../image/bitmap.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .coin{
+      width: 6.5rem;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .title {
+      font-size: 2.05rem;
+      display: block;
+      text-align: center;
+      color: #333333;
+      margin-top: 1.0rem;
+    }
+    .title-2 {
+      color: #666666;
+      font-size: 12px;
+      display: block;
+      text-align: center;
+      line-height: 1rem;
+    }
+    .title-sub {
+      display: block;
+      text-align: center;
+    }
+    .title-sub-2 {
+      display: block;
+      margin: 0 auto;
+      width: 4rem;
+    }
+    .title-sub-2-fast {
+      display: block;
+      margin: 0 auto;
+      width: 7rem;
+    }
+    .line {
+      display: block;
+      margin: 0.3rem auto 0;
+      width: 4rem;
+      height: 1px;
+      background: #ce222e;
+    }
+  }
+  .p5 {
+    height: 19.85rem;
+    margin: 2.15rem auto 0;
+    font-size: 12px;
+    color: #666666;
+    background-position: 0 100%;
+    .text {
+      margin-top: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      p {
+        text-indent: 1rem;
+      }
+    }
+
   }
 }
 .desc-part-1, .desc-part-2, .desc-part-3, .desc-part-4, .desc-part-5 {
@@ -94,16 +217,14 @@ body {
   }
 }
 .contact-info {
-  margin: 2rem 1rem 0;
-  display: inline-flex;
+  margin: 0 auto;
+  display: flex;
   font-size: 0.6rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   .contact-phone {
     margin-top: 1rem;
     display: inline-flex;
     height: 1.7rem;
-    width: 6.4rem;
     .icon {
       float: left;
       width: 1rem;
@@ -118,8 +239,7 @@ body {
       border-left: 1px solid #E1E1E1;
       margin-left: 0.5rem;
       padding-left: 0.7rem;
-      line-height: 1.1rem;
-      height: 2rem;
+      height: 1.7rem;
       .title, .info {
         display: block;
         color: #333333;
@@ -133,14 +253,6 @@ body {
     }
     .email {
       height: 0.8rem;
-    }
-    &:last-child {
-      width: 12rem;
-      .icon {
-        width: 0.8rem;
-        height: 1rem;
-        margin-right: 0.2rem;
-      }
     }
   }
 }
@@ -156,15 +268,25 @@ body {
     width: 3.4135rem;
     height: auto;
     position: absolute;
-    top: 50.5%;
+    top: -30%;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
-  .bottom-img {
-    background: url('../image/bottom.png') no-repeat;
-    background-size: 100%;
+  .bottom-txt {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 155px;
+    background: #cc2533;
+    font-size: 12px;
+    color: white;
+    .title-1 {
+      padding-top: 2.5rem;
+    }
+    .title-1, .title-2 {
+      display: block;
+      text-align: center;
+
+    }
   }
 }
