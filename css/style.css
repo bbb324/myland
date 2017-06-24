@@ -4,6 +4,7 @@ body {
 }
 .container {
   font-size: 0;
+  font-family: "Microsoft YaHei", din;
 }
 .container .header {
   width: 100%;
@@ -218,6 +219,7 @@ body {
   font-size: 18px;
   display: block;
   text-align: center;
+  line-height: 27px;
 }
 .container .header .header-content .arrow {
   position: absolute;
