@@ -165,13 +165,16 @@ body {
   text-align: center;
 }
 .body-content .desc-part {
-  margin-top: 2.15rem;
   width: 100%;
-  height: 14.95rem;
+  margin-top: 1.5rem;
+  height: 12.95rem;
   background: url('../image/bitmap.png');
   -webkit-background-size: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.body-content .desc-part:first-child {
+  margin-top: 2.15rem;
 }
 .body-content .desc-part .coin {
   width: 6.5rem;
