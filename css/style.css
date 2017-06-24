@@ -28,7 +28,8 @@ body {
 }
 .container .header .nav .phone {
   float: right;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: din;
   color: #FFFFFF;
   height: 90px;
   line-height: 90px;
@@ -55,35 +56,39 @@ body {
   padding-top: 46px;
 }
 .container .header .header-content .slogans .slogan {
-  width: 250px;
+  width: 450px;
   color: white;
   text-align: center;
 }
 .container .header .header-content .slogans .slogan .title-1 {
   display: block;
   margin: 0 auto;
-  font-size: 36px;
+  font-size: 72px;
+  font-family: shsM;
 }
 .container .header .header-content .slogans .slogan .title-2 {
   display: block;
   margin: 7px auto;
-  font-size: 12px;
-  line-height: 0.86;
-  letter-spacing: 5px;
+  font-family: din;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 15px;
 }
 .container .header .header-content .slogans .slogan-2 {
-  margin-top: 35px;
-  width: 266px;
-  font-size: 18px;
+  margin-top: 40px;
+  width: 290px;
+  font-size: 24px;
   color: white;
   position: relative;
   text-align: left;
+  font-family: shsR;
 }
 .container .header .header-content .slogans .slogan-2 .slogan-2-1,
 .container .header .header-content .slogans .slogan-2 .slogan-2-2 {
-  width: 118px;
+  width: 130px;
   display: inline-block;
   text-align: left;
+  line-height: 24px;
 }
 .container .header .header-content .slogans .slogan-2 .slogan-2-1 {
   margin-right: 0.5rem;
@@ -91,7 +96,7 @@ body {
 .container .header .header-content .slogans .slogan-2 .slogan-2-1 .direct {
   position: relative;
   top: 2px;
-  margin-right: 15px;
+  margin-right: 8px;
   float: left;
   background: url('../image/compare.png');
   -webkit-background-size: 20px;
@@ -102,7 +107,7 @@ body {
 .container .header .header-content .slogans .slogan-2 .slogan-2-2 .pointer {
   position: relative;
   top: 2px;
-  margin-right: 15px;
+  margin-right: 8px;
   float: left;
   background: url('../image/pointer.png');
   -webkit-background-size: 20px;
@@ -110,9 +115,23 @@ body {
   width: 20px;
   height: 20px;
 }
+.container .header .header-content .line {
+  width: 160px;
+  height: 1px;
+  background: #CE222E 100%;
+  margin-top: 121px;
+}
+.container .header .header-content .advantage {
+  width: 250px;
+  height: 67px;
+  margin-top: 154px;
+  background: url('../image/pc-advantage.png');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
 .container .header .header-content .draw-iphone {
-  width: 347px;
-  height: 650px;
+  width: 357px;
+  height: 692px;
   border: 1px solid #979797;
   -webkit-border-radius: 30px;
   border-radius: 30px;
@@ -126,11 +145,11 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 15px;
+  top: 29px;
 }
 .container .header .header-content .draw-iphone .draw-iphone-inner {
-  width: 295px;
-  height: 558px;
+  width: 312px;
+  height: 570px;
   border: 1px solid #979797;
   margin: auto;
   position: absolute;
@@ -162,8 +181,8 @@ body {
   text-align: center;
 }
 .container .header .header-content .draw-iphone .circle {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   -webkit-border-radius: 100%;
   border-radius: 100%;
   border: 1px solid #979797;
@@ -172,11 +191,6 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-.container .header .header-content .advantage {
-  width: 250px;
-  height: auto;
-  margin-top: 200px;
 }
 .container .header .header-content .arrow {
   position: absolute;
@@ -197,7 +211,7 @@ body {
   background-position: 0 100%;
 }
 .container .middle .part .detail {
-  width: 1032px;
+  width: 1170px;
   height: 600px;
   margin: 0 auto;
 }
@@ -207,8 +221,27 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   float: left;
-  width: 360px;
+  width: 450px;
   height: auto;
+}
+.container .middle .part .detail .gold {
+  margin-left: 70px;
+  height: 337px;
+}
+.container .middle .part .detail .run {
+  width: 414px;
+  height: 408px;
+  margin-right: 100px;
+}
+.container .middle .part .detail .good {
+  width: 433px;
+  height: 381px;
+  margin-left: 80px;
+}
+.container .middle .part .detail .save {
+  width: 449px;
+  height: 426px;
+  margin-right: 72px;
 }
 .container .middle .part .detail .detail-content {
   width: 380px;
@@ -218,25 +251,38 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   float: right;
+  margin-right: 70px;
 }
 .container .middle .part .detail .detail-content .title-1 {
   font-size: 48px;
   color: #333333;
   display: block;
+  line-height: 72px;
+  font-family: shsL;
 }
 .container .middle .part .detail .detail-content .title-2 {
   margin: 20px auto 0;
   font-size: 18px;
+  line-height: 27px;
+  font-family: shs;
   color: #666666;
   display: block;
   width: 380px;
 }
 .container .middle .part .detail .detail-content .description-txt {
   font-size: 18px;
+  font-family: shsR;
 }
 .container .middle .part .detail .detail-content .description-txt p {
   text-indent: 35px;
-  line-height: 1.7;
+  line-height: 27px;
+}
+.container .middle .part .detail .detail-content .line {
+  width: 80px;
+  height: 1px;
+  background: #CE222E;
+  margin-top: 50px;
+  display: block;
 }
 .container .contact-method {
   width: 100%;
@@ -245,6 +291,7 @@ body {
   align-items: center;
   justify-content: space-around;
   font-size: 18px;
+  color: #999999;
 }
 .container .contact-method .phone,
 .container .contact-method .email,
@@ -277,6 +324,7 @@ body {
 .container .contact-method .phone .info .txt,
 .container .contact-method .email .info .txt,
 .container .contact-method .location .info .txt {
+  color: #333333;
   display: block;
 }
 .container .contact-method .phone img {
@@ -334,7 +382,7 @@ body {
   width: 100%;
   height: 183px;
   background: #cc2533;
-  font-size: 18px;
+  font-size: 14px;
   color: #de767e;
   position: relative;
 }
@@ -347,15 +395,24 @@ body {
   right: 0;
   margin: 0 auto;
 }
+.container .footer .copyright .name {
+  display: block;
+  width: 130px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 78px;
+}
 .container .footer .copyright .txt {
   position: absolute;
   bottom: 15px;
   left: 0;
   right: 0;
   text-align: center;
-}
-.container .footer .copyright .txt .title-1 {
-  display: block;
+  font-family: shsR;
+  /*.title-1 {
+          display: block;
+        }*/
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .container .header {
