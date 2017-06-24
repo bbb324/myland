@@ -243,6 +243,7 @@ body {
   margin: 0 auto;
 }
 .container .middle .part .detail .detail-odd-img {
+  clear: both;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
