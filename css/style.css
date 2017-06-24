@@ -7,7 +7,7 @@ body {
 }
 .container .header {
   width: 100%;
-  height: 1080px;
+  height: 1070px;
   background: url('../image/pc-bg-min.png') no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
@@ -47,8 +47,8 @@ body {
 }
 .container .header .header-content {
   width: 1170px;
-  height: 950px;
-  margin: 58px auto 0;
+  height: 830px;
+  margin: 150px auto 0;
   position: relative;
 }
 .container .header .header-content .slogans {
@@ -190,15 +190,15 @@ body {
 }
 .container .middle .part {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: url('../image/information-bg.png') no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
-  background-position: 0;
+  background-position: 0 100%;
 }
 .container .middle .part .detail {
   width: 1170px;
-  height: 400px;
+  height: 600px;
   margin: 0 auto;
 }
 .container .middle .part .detail .detail-odd-img {
@@ -207,12 +207,11 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   float: left;
-  width: 270px;
+  width: 360px;
   height: auto;
 }
 .container .middle .part .detail .detail-content {
   width: 380px;
-  height: 150px;
   display: inline-block;
   position: relative;
   top: 50%;
@@ -226,23 +225,17 @@ body {
   display: block;
 }
 .container .middle .part .detail .detail-content .title-2 {
-  font-size: 18px;
+  margin: 20px auto 0;
+  font-size: 16px;
   color: #666666;
   display: block;
   width: 380px;
 }
 .container .middle .part .detail .detail-content .description-txt {
-  font-size: 18px;
+  font-size: 16px;
 }
-.container .middle .multi-words {
-  height: 450px;
-  background-position-y: 100%;
-}
-.container .middle .multi-words .detail {
-  height: 450px;
-}
-.container .middle .multi-words .detail .detail-content {
-  top: 20%;
+.container .middle .part .detail .detail-content .description-txt p {
+  text-indent: 35px;
 }
 .container .contact-method {
   width: 100%;
@@ -304,181 +297,47 @@ body {
   width: 100%;
   height: auto;
 }
-.container .footer .pc-app {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 45%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
 .container .footer .copyright {
   width: 100%;
   height: 183px;
   background: #cc2533;
   font-size: 18px;
-  color: white;
+  color: #de767e;
+  position: relative;
 }
-.container .footer .copyright .title-1 {
-  display: block;
+.container .footer .copyright .pc-app {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.container .footer .copyright .txt {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  width: 100%;
 }
-/*  .detail {
-    width: 1920px;
-    height: 600px;
-    margin: 0 auto;
-    .detail-bg {
-      position: absolute;
-      width: 100%;
-      height: 600px;
-    }
-    .detail-content {
-      width: 1170px;
-      height: inherit;
-      margin: 0 auto;
-    }
-    .detail-1-img, .detail-1-txt,
-    .detail-2-img, .detail-2-txt,
-    .detail-3-img, .detail-3-txt,
-    .detail-4-img, .detail-4-txt
-    {
-      height: auto;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-    }
-    .detail-1-img {
-      height: 56.1%;
-      width: auto;
-    }
-    .detail-2-img {
-      width: 408px;
-    }
-    .detail-3-img {
-      width: 380px;
-    }
-    .detail-4-img {
-      width: 426px;
-    }
-    .detail-1-txt {
-      height: 28.8%;
-      width: auto;
-    }
-    .detail-2-txt {
-      width: 360px;
-    }
-    .detail-3-txt {
-      width: 360px;
-    }
-    .detail-4-txt {
-      width: 360px;
-    }
-
-    .detail-1-img, .detail-3-img {
-      float: left;
-      margin-left: 5%;
-    }
-    .detail-1-txt, .detail-3-txt {
-      float: right;
-      right: 5%;
-    }
-    .detail-2-img, .detail-4-img {
-      float: right;
-      right: 5%;
-    }
-    .detail-2-txt, .detail-4-txt {
-      float: left;
-      left: 15%;
-    }
-  }
-  .detail-description {
-    width: 100%;
-    height: 600px;
-    .detail-bg {
-      position: absolute;
-      width: 100%;
-      height: 600px;
-      z-index: -1;
-    }
-    .detail-content {
-      height: inherit;
-      .description-img {
-        width: 486px;
-        height: auto;
-        position: relative;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-      }
-      .description-txt {
-        float: right;
-        width: 360px;
-        font-size: 18px;
-        color: #666666;
-        position: relative;
-        top: 50%;
-        right: 13%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        p {
-          text-indent: 35px;
-        }
-      }
-    }
-  }
-
-
-}*/
-@media screen and (min-width: 1280px) {
+.container .footer .copyright .txt .title-1 {
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .container .header {
     height: 711px;
   }
   .container .header .header-content {
     width: 750px;
     height: 563px;
+    margin: 58px auto 0;
   }
   .container .middle .part .detail {
     width: 750px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container .detail,
-  .container .detail .detail-bg {
-    height: 18.8rem;
-  }
-  .container .detail .detail-1-img,
-  .container .detail .detail-1-txt,
-  .container .detail .detail-2-img,
-  .container .detail .detail-2-txt,
-  .container .detail .detail-3-img,
-  .container .detail .detail-3-txt,
-  .container .detail .detail-4-img,
-  .container .detail .detail-4-txt {
-    width: 14rem;
-  }
-  .container .detail-description .description-img {
-    width: 28%;
-  }
-  .container .detail-description {
-    height: 18.8rem;
-  }
-  .container .detail-description .description-txt {
-    font-size: 0.8rem;
-  }
-  .container .contact-method {
-    font-size: 0.8rem;
-  }
-  .container .contact-method .phone {
-    width: 11rem;
-  }
-  .container .footer .pc-app {
-    width: 6.25rem;
+  .container .middle .part .detail .detail-odd-img {
+    width: 250px;
     height: auto;
   }
 }
