@@ -12,15 +12,15 @@
   font-style: normal;
 }*/
 @font-face {
-    font-family: 'shsR';
+    font-family: 'Microsofy yaHei';
     src: url('../fonts/SourceHanSerifCN-Regular.otf');
 }
 @font-face {
-  font-family: 'shsL';
+  font-family: 'Microsofy yaHei';
   src: url('../fonts/SourceHanSerifCN-Light.otf');
 }
 @font-face {
-  font-family: 'shsM';
+  font-family: 'Microsofy yaHei';
   src: url('../fonts/SourceHanSerifCN-Medium.otf');
 }
 @font-face {
