@@ -100,13 +100,69 @@ body {
 }
 .header .mobile-phone {
   width: 9.3rem;
-  height: auto;
+  height: 12rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
   bottom: 0;
   position: absolute;
   left: 0;
   right: 0;
+}
+.header .mobile-phone .draw-iphone {
+  width: 7.6rem;
+  height: 11.8rem;
+  border: 1px solid #979797;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-bottom: none;
+}
+.header .mobile-phone .draw-iphone .draw-iphone-line {
+  width: 1.7rem;
+  height: 1px;
+  background: #979797;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0.7rem;
+}
+.header .mobile-phone .draw-iphone .draw-iphone-inner {
+  width: 6.7rem;
+  height: 10.2rem;
+  border: 1px solid #979797;
+  border-bottom: none;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.header .mobile-phone .draw-iphone .draw-iphone-inner .txt {
+  bottom: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.header .mobile-phone .draw-iphone .draw-iphone-inner .txt .app {
+  display: block;
+  width: 4rem;
+  height: auto;
+  position: relative;
+  bottom: 2rem;
+  margin: 0 auto;
+}
+.header .mobile-phone .draw-iphone .draw-iphone-inner .txt .title-1,
+.header .mobile-phone .draw-iphone .draw-iphone-inner .txt .title-2 {
+  color: white;
+  font-size: 12px;
+  display: block;
+  text-align: center;
 }
 .body-content .desc-part {
   margin-top: 2.15rem;
@@ -251,8 +307,40 @@ body {
   font-size: 0;
 }
 .bottom .map {
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 10.67rem;
+  background: url('../image/map.png');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.bottom .map .explain {
+  background: rgba(0, 0, 0, 0.5);
+  color: #E1E1E1;
+  font-size: 12px;
+  display: block;
+  width: 9rem;
+  height: 2rem;
+  line-height: 1.5rem;
+  position: relative;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.bottom .map .location {
+  display: block;
+  width: 1rem;
+  height: 1.07rem;
+  background: url(../image/location.png);
+  background-size: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 .bottom .app {
   width: 3.4135rem;
