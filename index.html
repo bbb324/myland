@@ -137,16 +137,10 @@
   </div>
 </div>
 <script>
-  /*var test = /-min\./
-  $("img").each(function(index,obj){
-    console.log($(this).attr('src'));
-    if(test.test($(this).attr("src"))){
-      console.log(123);
-      var reSrc = $(this).attr("src").replace(test,".");
-      $(this).attr("src",reSrc)
-    }
-  })*/
-  $('.header')[0].style.background = 'url("image/pc-bg.png") no-repeat';
+  window.onload=function(){
+    $('.header')[0].style.background = 'url("image/pc-bg.png") no-repeat';
+  }
+
 </script>
 </body>
 </html>
