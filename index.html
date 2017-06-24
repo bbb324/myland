@@ -5,6 +5,7 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/zepto.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         </div>
         <img src="image/slogan-2.png" alt="" class="advantage"/>
       </div>
-      <img src="image/arrow.png" alt="" class="arrow"/>
+      <img src="image/arrow-1.png" alt="" class="arrow"/>
     </div>
   </div>
   <div class="middle">
@@ -135,5 +136,17 @@
     </div>
   </div>
 </div>
+<script>
+  /*var test = /-min\./
+  $("img").each(function(index,obj){
+    console.log($(this).attr('src'));
+    if(test.test($(this).attr("src"))){
+      console.log(123);
+      var reSrc = $(this).attr("src").replace(test,".");
+      $(this).attr("src",reSrc)
+    }
+  })*/
+  $('.header')[0].style.background = 'url("image/pc-bg.png") no-repeat';
+</script>
 </body>
 </html>
