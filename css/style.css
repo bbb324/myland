@@ -375,6 +375,41 @@ body {
 .container .footer {
   position: relative;
 }
+.container .footer .map-location {
+  position: relative;
+}
+.container .footer .map-location .pc-map {
+  width: 100%;
+  height: auto;
+}
+.container .footer .map-location .explain {
+  background: rgba(0, 0, 0, 0.5);
+  color: #E1E1E1;
+  font-size: 12px;
+  display: block;
+  width: 200px;
+  height: 33px;
+  line-height: 26px;
+  position: absolute;
+  top: 93px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .footer .map-location .location {
+  display: block;
+  width: 33px;
+  height: 36px;
+  background: url(../image/location.png) no-repeat;
+  background-size: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
 .container .footer .map {
   position: relative;
   width: 100%;
@@ -447,30 +482,60 @@ body {
 .container .footer .copyright .txt .title-1 {
   display: block;
 }
-@media screen and (min-width: 1300px) and (max-width: 1800px) {
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
   .container .header {
-    height: 900px;
+    height: 578px;
   }
   .container .header .header-content {
-    height: 680px;
-    margin-top: 34px;
+    width: 900px;
+    height: 488px;
+    margin: 0 auto;
+  }
+  .container .header .header-content .iphone {
+    width: 279px;
+    height: 458px;
+  }
+  .container .middle .part .detail {
+    width: 900px;
   }
   .container .header .header-content .line {
-    margin-top: 54px;
+    margin-top: 65px;
   }
   .container .header .header-content .advantage {
-    margin-top: 96px;
+    margin-top: 60px;
   }
-  .container .footer .map {
-    height: 333px;
+  .container .middle .part .detail .gold {
+    height: 234px;
+    width: 310px;
+    margin-left: 35px;
+  }
+  .container .middle .part .detail .detail-content {
+    width: 317px;
+  }
+  .container .middle .part .detail .run {
+    width: 286px;
+    height: 275px;
+    margin-right: 50px;
+  }
+  .container .middle .part .detail .good {
+    width: 310px;
+    height: 288px;
+    margin-left: 48px;
+  }
+  .container .middle .part .detail .save {
+    width: 315px;
+    height: 309px;
+  }
+  .container .footer .map-location .explain {
+    top: 68px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .container .header {
     height: 711px;
   }
   .container .header .header-content {
-    width: 750px;
+    width: 900px;
     height: 563px;
     margin: 0 auto;
   }
@@ -494,7 +559,84 @@ body {
     margin-top: 70px;
   }
   .container .header .header-content .iphone {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    width: 287px;
+    height: 468px;
+  }
+  .container .header .header-content .arrow {
+    bottom: -24px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .container .header .header-content .arrow {
+    bottom: -44px;
+  }
+  .container .header {
+    height: 767px;
+  }
+  .container .header .header-content {
+    height: 547px;
+    margin-top: 34px;
+  }
+  .container .header .header-content .iphone {
+    height: 499px;
+    width: 303px;
+  }
+  .container .header .header-content .iphone .txt {
+    top: 294px;
+  }
+  .container .header .header-content .line {
+    margin-top: 65px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+  .container .footer .map-location .explain {
+    top: 106px;
+  }
+  .container .header .header-content .line {
+    margin-top: 60px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 60px;
+  }
+  .container .header .header-content .iphone {
+    height: 499px;
+    width: 303px;
+  }
+  .container .header .header-content .iphone .txt {
+    top: 294px;
+  }
+  .container .header .header-content .arrow {
+    bottom: -44px;
+  }
+  .container .header {
+    height: 767px;
+  }
+  .container .header .header-content {
+    height: 547px;
+    margin-top: 34px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .container .header {
+    height: 900px;
+  }
+  .container .header .header-content {
+    height: 680px;
+    margin-top: 34px;
+  }
+  .container .header .header-content .line {
+    margin-top: 54px;
+  }
+  .container .header .header-content .advantage {
+    margin-top: 96px;
+  }
+  .container .footer .map {
+    height: 333px;
+  }
+  .container .footer .map-location .explain {
+    top: 124px;
   }
 }
