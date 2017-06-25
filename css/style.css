@@ -139,23 +139,6 @@ body {
   float: right;
   position: relative;
 }
-.container .header .header-content .iphone .txt {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  height: 200px;
-}
-.container .header .header-content .iphone .txt .title-1,
-.container .header .header-content .iphone .txt .title-2 {
-  color: white;
-  font-size: 18px;
-  display: block;
-  text-align: center;
-  line-height: 27px;
-}
 .container .header .header-content .arrow {
   position: absolute;
   width: 50px;
