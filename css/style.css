@@ -66,6 +66,7 @@ body {
   margin: 0 auto;
   font-size: 72px;
   font-family: PingFangSC-Semibold, "Microsoft YaHei";
+  text-align: left;
 }
 .container .header .header-content .slogans .slogan .title-2 {
   display: block;
@@ -74,6 +75,7 @@ body {
   font-size: 14px;
   line-height: 12px;
   letter-spacing: 15px;
+  text-align: left;
 }
 .container .header .header-content .slogans .slogan-2 {
   margin-top: 40px;
