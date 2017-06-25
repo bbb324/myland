@@ -4,7 +4,7 @@ body {
 }
 .container {
   font-size: 0;
-  font-family: PingFangSC-Regular, din, "Microsoft YaHei";
+  font-family: PingFangSC-Light, din, "Microsoft YaHei";
 }
 .container .header {
   width: 100%;
@@ -60,6 +60,7 @@ body {
   width: 450px;
   color: white;
   text-align: center;
+  font-family: PingFangSC-Semibold;
 }
 .container .header .header-content .slogans .slogan .title-1 {
   display: block;
