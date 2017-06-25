@@ -491,7 +491,6 @@ body {
     height: 578px;
   }
   .container .header .header-content {
-    width: 900px;
     height: 488px;
     margin: 0 auto;
   }
@@ -578,7 +577,7 @@ body {
   }
   .container .header .header-content {
     height: 547px;
-    margin-top: 34px;
+    margin-top: 63px;
   }
   .container .header .header-content .iphone {
     height: 499px;
@@ -607,6 +606,7 @@ body {
   .container .header .header-content .iphone {
     height: 499px;
     width: 303px;
+    top: -11px;
   }
   .container .header .header-content .iphone .txt {
     top: 294px;
@@ -619,7 +619,7 @@ body {
   }
   .container .header .header-content {
     height: 547px;
-    margin-top: 34px;
+    margin-top: 75px;
   }
 }
 @media screen and (min-width: 1501px) and (max-width: 1800px) {
@@ -628,7 +628,7 @@ body {
   }
   .container .header .header-content {
     height: 680px;
-    margin-top: 34px;
+    margin-top: 105px;
   }
   .container .header .header-content .line {
     margin-top: 54px;
@@ -641,5 +641,8 @@ body {
   }
   .container .footer .map-location .explain {
     top: 124px;
+  }
+  .container .header .header-content .iphone {
+    top: -20px;
   }
 }
