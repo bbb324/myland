@@ -467,6 +467,9 @@ body {
     height: 563px;
     margin: 50px auto 0;
   }
+  .container .middle .part .detail {
+    width: 960px;
+  }
   .container .middle .part .detail .detail-odd-img {
     width: 250px;
     height: auto;
