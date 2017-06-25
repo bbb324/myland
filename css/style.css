@@ -463,6 +463,7 @@ body {
     height: 711px;
   }
   .container .header .header-content {
+    width: 960px;
     height: 563px;
     margin: 50px auto 0;
   }
