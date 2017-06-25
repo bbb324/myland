@@ -471,7 +471,7 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .container .header .header-content .iphone .txt {
-    top: 65%;
+    top: 68%;
   }
   .container .header {
     height: 711px;
@@ -523,7 +523,7 @@ body {
     width: 303px;
   }
   .container .header .header-content .iphone .txt {
-    top: 294px;
+    top: 65%;
   }
   .container .header .header-content .line {
     margin-top: 65px;
