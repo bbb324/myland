@@ -471,7 +471,7 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .container .header .header-content .iphone .txt {
-    top: 62%;
+    top: 65%;
   }
   .container .header {
     height: 711px;
@@ -548,7 +548,7 @@ body {
     top: -11px;
   }
   .container .header .header-content .iphone .txt {
-    top: 294px;
+    top: 66%;
   }
   .container .header .header-content .arrow {
     bottom: -44px;
@@ -563,7 +563,7 @@ body {
 }
 @media screen and (min-width: 1501px) and (max-width: 1800px) {
   .container .header .header-content .iphone .txt {
-    top: 28%;
+    top: 31%;
   }
   .container .header {
     height: 900px;
